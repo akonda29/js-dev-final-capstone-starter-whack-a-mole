@@ -65,6 +65,24 @@ return 1000;}
  */
 function chooseHole(holes) {
   // TODO: Write your code here.
+  let lastHole = null;
+// Generate a random integer from 0 to 8 (or length of holes object) into an index variable
+let index = Math.floor(Math.random() * holes.length);
+
+// Get a random hole with the random index
+const hole = holes[index];
+
+// Check if the hole is the same as the lastHole
+if (hole === lastHole) {
+// Call chooseHole again to get a different hole
+return chooseHole(holes);
+}
+
+// Keep track of the current hole as the lastHole
+lastHole = hole;
+
+// Return the selected hole
+return hole;
 
 }
 
