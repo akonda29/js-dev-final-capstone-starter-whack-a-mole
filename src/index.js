@@ -132,8 +132,8 @@ return "game stopped";
 *
 */
 function showUp() {
-  let delay = 0; // TODO: Update so that it uses setDelay()
-  const hole = 0;  // TODO: Update so that it use chooseHole()
+  let delay = setDelay(); // TODO: Update so that it uses setDelay()
+  const hole = chooseHole();  // TODO: Update so that it use chooseHole()
   return showAndHide(hole, delay);
 }
 
