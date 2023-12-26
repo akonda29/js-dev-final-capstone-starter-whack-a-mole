@@ -108,7 +108,18 @@ return hole;
 */
 function gameOver() {
   // TODO: Write your code here
-  
+  // Check if there is still time
+if (time > 0) {
+// Call showUp function to continue the game
+const timeoutId = showUp();
+  // Return the timeoutId
+return timeoutId; }
+  else{
+    // Call stopGame function as there is no more time
+stopGame();
+    // Return a message indicating that the game is stopped
+return "game stopped";
+  }
 }
 
 /**
