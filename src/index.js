@@ -67,7 +67,7 @@ function chooseHole(holes) {
   // TODO: Write your code here.
   let lastHole = null;
 // Generate a random integer from 0 to 8 (or length of holes object) into an index variable
-let index = Math.floor(Math.random() * holes.length);
+let index = randomInteger(0,8);
 
 // Get a random hole with the random index
 const hole = holes[index];
