@@ -116,7 +116,7 @@ const timeoutId = showUp();
 return timeoutId; }
   else{
     // Call stopGame function as there is no more time
-stopGame();
+ let gameStopped = stopGame();
     // Return a message indicating that the game is stopped
 return "game stopped";
   }
@@ -132,8 +132,8 @@ return "game stopped";
 *
 */
 function showUp() {
-  let delay = setDelay(); // TODO: Update so that it uses setDelay()
-  const hole = chooseHole();  // TODO: Update so that it use chooseHole()
+  let delay = setDelay(difficulty); // TODO: Update so that it uses setDelay()
+  const hole = chooseHole(holes);  // TODO: Update so that it use chooseHole()
   return showAndHide(hole, delay);
 }
 
