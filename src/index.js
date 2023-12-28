@@ -46,7 +46,7 @@ function setDelay(difficulty) {
     return 1500;} else if (difficulty === "normal") {
 return 1000;}
   else if (difficulty === "hard"){
-    return Math.floor(Math.random() * (1200 - 600 + 1)) + 600;}
+    return randomInteger(600, 1200);}
 }
 
 /**
