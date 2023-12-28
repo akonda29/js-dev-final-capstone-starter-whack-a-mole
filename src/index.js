@@ -291,6 +291,9 @@ function stopGame(){
 *
 */
 function startGame(){
+  points = 0;
+  setEventListeners();
+startTimer();
   setDuration(10);
   showUp();
   return "game started";
