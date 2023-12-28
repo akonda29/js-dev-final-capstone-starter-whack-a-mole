@@ -65,7 +65,7 @@ return 1000;}
  */
 function chooseHole(holes) {
   // TODO: Write your code here.
-  let lastHole = null;
+
 // Generate a random integer from 0 to 8 (or length of holes object) into an index variable
 let index = randomInteger(0,8);
 
